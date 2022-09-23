@@ -25,6 +25,6 @@
 		<TextBox HorizontalAlignment="Left" Margin="700,500,0,0" VerticalAlignment="Top" Text="" TextWrapping="Wrap"  Height="70" Width="300" FontSize="45" x:Name="monthlyInterestRateTextBox" IsReadOnly="True"/>
 		<TextBox HorizontalAlignment="Left" Margin="700,575,0,0" VerticalAlignment="Top" Text="" TextWrapping="Wrap"  Height="70" Width="300" FontSize="45" x:Name="monthlyRepaimentTextBox" IsReadOnly="True"/>
         <Button Content="Calculate" Margin="585,721,0,0" VerticalAlignment="Top" FontSize="36" Click="Button_Click"/>
-        <Button Content="Exit" Margin="585,813,0,0" VerticalAlignment="Top"  FontSize="36" Width="165"/>
+        <Button Content="Exit" Margin="585,813,0,0" VerticalAlignment="Top"  FontSize="36" Width="165" Click="Button_Click_1"/>
     </Grid>
 </Page>

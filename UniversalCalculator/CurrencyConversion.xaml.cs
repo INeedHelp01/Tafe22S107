@@ -139,7 +139,7 @@ namespace Calculator
 		private double CalMoneyToRupeeFromUS(double amount)
 		{
 			const double ruppe = 74.257327;
-			FromToTextBlock.Text = "1 USD = " + ruppe + "Rupee";
+			FromToTextBlock.Text = "1 USD = " + ruppe + " Rupee";
 			ToFromTextBlock.Text = "1 Rupee = 0.011492628 USD"; 
 			double total;
 			total = ruppe * amount;
@@ -148,7 +148,7 @@ namespace Calculator
 		private double CalMoneyToUSfromEuro(double amount)
 		{
 			const double us = 1.1739732;
-			FromToTextBlock.Text = "1 Euro = " + us + "USD";
+			FromToTextBlock.Text = "1 Euro = " + us + " USD";
 			ToFromTextBlock.Text = "1 USD = 0.8518992 Euro";
 			double total;
 			total = us * amount;
@@ -157,7 +157,7 @@ namespace Calculator
 		private double CalMoneyToPoundFromEuro(double amount)
 		{
 			const double pound = 0.8556672;
-			FromToTextBlock.Text = "1 Euro = " + pound + "British Pound";
+			FromToTextBlock.Text = "1 Euro = " + pound + " British Pound";
 			ToFromTextBlock.Text = "1 Pound = 1.1686692 Euro";
 			double total;
 			total = pound * amount;
@@ -166,7 +166,7 @@ namespace Calculator
 		private double CalMoneyToRupeeFromEuro(double amount)
 		{
 			const double rupee = 87.00755;
-			FromToTextBlock.Text = "1 Euro = " + rupee + "Rupee";
+			FromToTextBlock.Text = "1 Euro = " + rupee + " Rupee";
 			ToFromTextBlock.Text = "1 Rupee = 0.013492774 Euro ";
 			double total;
 			total = rupee * amount;
@@ -175,7 +175,7 @@ namespace Calculator
 		private double CalPoundToUS(double amount)
 		{
 			const double us = 1.371907;
-			FromToTextBlock.Text = "1 British Pound = " + us + "USD";
+			FromToTextBlock.Text = "1 British Pound = " + us + " USD";
 			ToFromTextBlock.Text = "1 USD = 0.72872436 British Pound";
 			double total;
 			total = us * amount;
@@ -184,7 +184,7 @@ namespace Calculator
 		private double CalPoundToEuro(double amount)
 		{
 			const double euro = 1.1686692;
-			FromToTextBlock.Text = "1 British Pound = " + euro + "Euro";
+			FromToTextBlock.Text = "1 British Pound = " + euro + " Euro";
 			ToFromTextBlock.Text = "1 Euro = 0.8556672 British Pound";
 			double total;
 			total = euro * amount;
@@ -194,7 +194,7 @@ namespace Calculator
 		private double CalPoundToRupee(double amount)
 		{
 			const double rupee = 101.68635;
-			FromToTextBlock.Text = "1 British Pound = " + rupee + "Rupee";
+			FromToTextBlock.Text = "1 British Pound = " + rupee + " Rupee";
 			ToFromTextBlock.Text = "1 Rupee = 0.0098339397 British Pound";
 			double total;
 			total = rupee * amount;
@@ -203,7 +203,7 @@ namespace Calculator
 		private double CalRupeeToUS(double amount)
 		{
 			const double us = 0.01492628;
-			FromToTextBlock.Text = "1 Rupee = " + us + "USD";
+			FromToTextBlock.Text = "1 Rupee = " + us + " USD";
 			ToFromTextBlock.Text = "1 USD = 74.257327 Rupee";
 			double total;
 			total = us * amount;
@@ -212,7 +212,7 @@ namespace Calculator
 		private double CalRupeeToEuro(double amount)
 		{
 			const double euro = 0.0113492774;
-			FromToTextBlock.Text = "1 Rupee = " + euro + "Euro";
+			FromToTextBlock.Text = "1 Rupee = " + euro + " Euro";
 			ToFromTextBlock.Text = "1 Euro = 87.00755 Rupee";
 			double total;
 			total = euro * amount;
@@ -222,12 +222,16 @@ namespace Calculator
 		private double CalRupeeToPound(double amount)
 		{
 			const double pound = 0.0098339397;
-			FromToTextBlock.Text = "1 Rupee = " + pound + "British Pound";
+			FromToTextBlock.Text = "1 Rupee = " + pound + " British Pound";
 			ToFromTextBlock.Text = "1 British Pound = 101.68635;";
 			double total;
 			total = pound * amount;
 			return total;
 		}
 
+		private void Button_Click_1(object sender, RoutedEventArgs e)
+		{
+			this.Frame.Navigate(typeof(MainMenu));
+		}
 	}
 }
