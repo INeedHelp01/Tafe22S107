@@ -56,5 +56,10 @@ namespace Calculator
 		{
 			Environment.Exit(0);
 		}
+
+		private void Button_Click_5(object sender, RoutedEventArgs e)
+		{
+			//Trip Calulator Code will be devoleped later
+		}
 	}
 }
